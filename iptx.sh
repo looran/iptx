@@ -32,14 +32,14 @@ fatal_usage() {
 	Usage: $PROGRAM (clean | show | <service> | port/proto) [<interface>] [open | close]
 
 	Examples:
-	$PROGRAM ftp			# Open ftp port on ethernet interface
-	$PROGRAM ftp close		# Close ftp port on ethernet interface
-	$PROGRAM http		 	# Open http port on ethernet interface
-	$PROGRAM http wifi	 	# Open http port on wireless interface
-	$PROGRAM http all close  	# Close http port on both interfaces
-	$PROGRAM 12345/tcp eth3		# Open 12345/tcp on eth3
-	$PROGRAM 12345/tcp eth3 close	# Close 12345/tcp on eth3
-	$PROGRAM clean			# Restore iptables defaults
+	$PROGRAM ftp                    # Open ftp port on ethernet interface
+	$PROGRAM ftp close              # Close ftp port on ethernet interface
+	$PROGRAM http                   # Open http port on ethernet interface
+	$PROGRAM http wifi              # Open http port on wireless interface
+	$PROGRAM http all close         # Close http port on both interfaces
+	$PROGRAM 12345/tcp eth3         # Open 12345/tcp on eth3
+	$PROGRAM 12345/tcp eth3 close   # Close 12345/tcp on eth3
+	$PROGRAM clean                  # Restore iptables defaults
 	_EOF
 
 	exit 1
