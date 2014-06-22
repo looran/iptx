@@ -29,7 +29,7 @@ LOG_CONNECTIONS=0
 
 fatal_usage() {
 	cat <<-_EOF
-	Usage: $PROGRAM (clean | show | <service> | port/proto) [<interface>] [open | close]]
+	Usage: $PROGRAM (clean | show | <service> | port/proto) [<interface>] [open | close]
 
 	Examples:
 	$PROGRAM ftp

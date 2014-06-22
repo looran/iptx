@@ -7,7 +7,7 @@ Iptables helper for your laptop
 ### Usage
 
 ```bash
-iptablesx (clean | show | <service> | port/proto) [<interface>] [open | close]]
+iptablesx (clean | show | <service> | port/proto) [<interface>] [open | close]
 
 Examples:
 iptablesx ftp
