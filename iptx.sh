@@ -91,8 +91,8 @@ ipt_show() {
 }
 
 dhcp_server() {
-	ipt_rule 67/dns $iface $action
-	ipt_rule 53/dns $iface $action
+	ipt_rule 67/udp $iface $action
+	ipt_rule 53/udp $iface $action
 	dnsmasq_cmd="dnsmasq -E -F 192.168.9.11,192.168.9.50,12h -O 3,192.168.9.1 -i $iface"
 	if [ $action == "open" ]; then
 		trace sudo ifconfig $iface 192.168.9.1 up
